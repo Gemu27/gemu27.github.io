@@ -300,9 +300,8 @@ a{ text-decoration: none}
     font-size: 12px;
     text-align: center;
     position: absolute;
-    bottom: 2%;
-    left: 95%;
-    transform: translateX(-50%);
+    top: 2%;
+    right: 5%;
 }
 
 /*-----------------------------简洁版样式定义- 结束---------------------------------------------------*/
