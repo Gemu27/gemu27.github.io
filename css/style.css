@@ -76,7 +76,7 @@ a{ text-decoration: none}
 	background: rgba(0,0,0,0.3);
 }
 .content{
-	width: 1100px;	
+	width: 1200px;
     position: absolute; 
     left: 50%;
     transform: translateX(-50%);
@@ -95,10 +95,13 @@ a{ text-decoration: none}
 .bg-2{
 	padding-top: 60px;
 }
+/*
 .content{
 	width: 1100px;
+	overflow: hidden;
 	margin: 30px auto;
 }
+*/
 	
 	
 .nav-list{
@@ -237,14 +240,14 @@ a{ text-decoration: none}
 
 
 .jianjie{
-	width: 1170px;
 	z-index: 1;
 }
 .jj-list{
-	width: 350px;
-	margin-right: 25px;
-	display:inline-block;
+	margin-right: 20px;
+	/* float: left; */
 	margin-bottom: 20px;
+	display: inline-block;
+	
 	z-index: 1;
 }
 .jj-list-tit{
@@ -255,12 +258,13 @@ a{ text-decoration: none}
 	z-index: 1;
 }
 .jj-list-con{
-	overflow: hidden;
+	width: 350px;
 	z-index: 1;
 }
 .jj-list-con li{
 	width: 110px;
 	margin: 3px 3px;
+	
 }
 .link-3{
 	display: block;
