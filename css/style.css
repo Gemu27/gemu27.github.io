@@ -243,7 +243,7 @@ a{ text-decoration: none}
 .jj-list{
 	width: 350px;
 	margin-right: 25px;
-	display:inline-nlock;
+	display:inline-block;
 	margin-bottom: 20px;
 	z-index: 1;
 }
