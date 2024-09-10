@@ -9,7 +9,9 @@
 
 </head>
 <body>
-
+    <div id="background_">
+        
+    </div>
 <!---------------------------- nav -------------------------------->
     <samp id="begin"></samp> <!-- 标定开始位置 -->
     <div id="nav">
@@ -29,10 +31,12 @@
     <div id="header">
         <div id="search_box">
             <div id="sb_1">
-                <input type="text" id ="search_1"  autocomplete="off" placeholder="搜索网页">
+                <input type="text" id ="search_1" oninput="clearbutton()" onkeydown="if(event.keyCode==13){search()}" autocomplete="off" placeholder="搜索网页">
             </div>
             <div id="sb_2">
-                <button onclick="clearInput()">清除</button>        
+                <div>
+                    <button onclick="clearInput()" class="button" id="button">×</button>
+                </div>    
             </div>
             <div id="sb_3">
                 <input type="button" value="百度一下">
@@ -136,20 +140,34 @@
         <a href="https://github.com/Gemu27/gemu27.github.io/" style="color:#eee;" target="_blank" rel="nofollow">开源</a>
     </div>
 <!------------------------------------- 搜索引擎调用 -------------------------------------->
-    <script href="./javas/ja.js">
+    <script type="text/javascript">
         var text = document.querySelector("#search_1");
+        var element1 = document.getElementById("button");
         var sear = document.querySelector("#sb_3");
-        // var browserWidth = window.innerWidth;
+        sear.addEventListener("click",search);
+        
+        // 搜索跳转
         function search(){
             var textcontent = text.value;
-            location.href = "https://www.baidu.com/s?wd="+textcontent;
+            window.open("https://www.baidu.com/s?wd="+textcontent );
+            // location.href = "https://www.baidu.com/s?wd="+textcontent;
         }
         // 清除搜索内容
         function clearInput() {
             document.getElementById('search_1').value = '';
+            element1.style.display = "none"; 
         }
-        sear.addEventListener("click",search);
+        // 清除按钮的显隐
+        function clearbutton(){
+            var textcontent = text.value;
+            if(textcontent != ""){
+                console.log("B");
+                element1.style.display = "block"; 
+            }
+            else{
+                element1.style.display = "none"; 
+            }
+        }
     </script>
-
 </body>
 </html>
