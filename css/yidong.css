@@ -172,7 +172,7 @@
     width: 31.3%;
     height: 36px;
     /* background-color: #c4c7ce; */
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 .list_con li a{
     display: block;
