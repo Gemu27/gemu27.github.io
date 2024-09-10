@@ -153,35 +153,30 @@ body{
     text-align: center;
     width: 10%;
 }
-#nav_0{   
-    float: left;
-    height: 60px;
-	width: 180px;
-}
-#nav_0 a{
+
+#top a{
     color:#eee;
     background-color: #4e6ef2;
     display: block;
     text-align: center;
     line-height: 60px;
     font-size: x-large;
-    font-family: 'Times New Roman';
 }
-#nav_0 a:hover{
+#top a:hover{
     background-color: #4662d9;
     color: aliceblue;
 }
-#nav ul a{
+
+.nav a{
     color: black;
     display: block;
     font-family: 微软雅黑;
     font-size: x-large;
 }
 
-#nav ul a:hover{
+.nav a:hover{
     background:  rgba(0,0,0,0.2);
     color: #FFF;
-    font-weight: 600;
 }
 /* -------------container------------- */
 /* 整体范围 */
