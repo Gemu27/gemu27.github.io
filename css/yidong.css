@@ -151,7 +151,7 @@ body{
     padding: 0;
     width: 31.3%;
     height: 36px;
-    background-color: #c4c7ce;
+/*     background-color: #c4c7ce; */
     overflow: hidden;
 }
 .list_con li a{
