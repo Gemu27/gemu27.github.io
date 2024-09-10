@@ -14,7 +14,7 @@
 }
 
 body{
-    background: url("../img/header2.jpg");
+    background: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -32,43 +32,33 @@ body{
     z-index: 1;
 }
 
-#nav li{
-    float: left;
-    height: 44px;
-    width: 100%;
-    line-height: 44px;
-    /* background-color: #354db8; */
-}
-#nav_0{   
-    float: left;
-    height: 60px;
-	width: 100%;
-}
-#nav_0 a{
+#top a{
     color:#eee;
     background-color: #4e6ef2;
-    display: block;
-    padding:0 0 0 10%;
-    line-height: 60px;
-    font-size: large;
-    font-family: 'Times New Roman';
+    font-size: x-large;
 }
-#nav_0 a:hover{
+#top a:hover{
     background-color: #4662d9;
     color: aliceblue;
 }
-#nav ul a{
+
+.nav{
+    float: left;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+}
+.nav a{
     color: black;
+    font-size: large;
     display: block;
     font-family: 微软雅黑;
-    font-size: medium;
-    padding:0 0 0 10px;
+    padding:0 0 0 30px;
 }
 
-#nav ul a:hover{
+.nav a:hover{
     background:  rgba(0,0,0,0.2);
     color: #FFF;
-    font-weight: 600;
 }
 /* -------------搜索框head------------- */
 #header{
