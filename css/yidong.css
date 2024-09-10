@@ -2,27 +2,32 @@
 /* CSS Document */
 
 /* ------------------------屏幕适应----------------------------- */
-@media screen and (max-width:800px) {
-    .main,.list_n{
-        margin: 0;
-        padding: 0;
-    }
-body{
-	background: url("../img/header2.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;/*背景图片不随着页面滚动*/
+@media screen and (max-width:500px) {
+.main,.list_n{
+    margin: 0;
+    padding: 0;
 }
+#background_{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url("../img/header2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;/*背景图片不随着页面滚动*/
+}
+    
 /* -------------导航栏nav------------- */
 #nav{
 	display: none;
 }
 /* -------------搜索框head------------- */
 #header{
-    height: 44px;
-    width: 100%;
-    margin: 0;
+    height: 40px;
+    width: 280px;
+    margin: auto;
     padding: 80px 0 0;
     /* background-color: aqua; */
 	position: relative;
@@ -31,8 +36,9 @@ body{
     margin: auto;
     position: relative;
     width: 280px;
-    height: 44px;
-/*     background-color: blueviolet; */
+    height: 40px;
+    overflow: hidden;
+    /* background-color: blueviolet; */
 }
 #sb_1,#sb_2,#sb_3{
     margin: 0;
@@ -41,27 +47,26 @@ body{
 }
 #sb_1{
     float: left;
-    width: 192px;
-    height: 44px;
+    width: 200px;
+    height: 40px;
     overflow: hidden;
     /* background-color: aquamarine; */
 }
 #sb_2{
     float: left;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     /* background-color: rgb(255, 56, 56); */
 }
 #sb_3{
     float: left;
-    width: 44px;
-    height: 44px;
-/*     background-color: rgb(25, 201, 57); */
+    width: 40px;
+    height: 40px;
+    /* background-color: rgb(25, 201, 57); */
 }
 #sb_1 input{
-    float: left;
-    height: 24px;
-    width: 180px;
+    height: 20px;
+    width: 188px;
     font-size: 18px;
     margin: 0;
     outline: none;
@@ -71,28 +76,43 @@ body{
     background-color: #fff;
     border-radius:10px 0 0 10px;
 }
-#sb_2 button{
-    text-align: center;
-    line-height: 40px;
-    font-size: 12px;
+#sb_2 div{
+    height: 36px; 
+    width: 40;
+    margin: 0;
+    padding: 0;
+    border: 0;
     border-top: 2px solid #c4c7ce;
     border-bottom: 2px solid #c4c7ce;
     background-color: #fff;
+}
+
+#button{
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: 宋体;
     color: gray;
+    background-color: transparent;
 }
 #sb_2 button:hover{
     color: rgb(0, 0, 0);    
+    font-weight: bolder;
 }
 #sb_3 div{
     display: block;
     float: left;
-    width: 100%;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 24px;
-    font-weight: 400;
     background-color: #4e6ef2;
     color: aliceblue;
     border-radius:0 10px 10px 0;
@@ -110,9 +130,9 @@ body{
 	display: none;
 }
 #sb_3 img{
-    float: left;
-    display: inline;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    display: block;
     padding: 10px;
 }
 /* -------------小标签------------- */
@@ -151,7 +171,7 @@ body{
     padding: 0;
     width: 31.3%;
     height: 36px;
-/*     background-color: #c4c7ce; */
+    /* background-color: #c4c7ce; */
     overflow: hidden;
 }
 .list_con li a{
