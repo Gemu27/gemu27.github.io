@@ -14,7 +14,13 @@
     float: left;
     width: 100%;
 }
-body{
+#background_{
+    position: fixed;
+    z-index: -10;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    
     background: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -28,39 +34,45 @@ body{
     width: 100%;
     margin: 0;
     padding: 200px 0 0;
+    z-index: 0;
     /* background-color: aqua;    */
 }
 #search_box{
     margin: auto;
+    padding: 0;
+    border: 0;
     position: relative;
-    width: 800px;
+    width: 750px;
     height: 60px;
-    /* overflow: hidden; */
     /* background-color: blueviolet; */
+}
+#sb_1,#sb_3,#sb_3{
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 #sb_1{
     float: left;
-    width: 75%;
+    width: 570px;
     height: 60px;
     overflow: hidden;
     /* background-color: aquamarine; */
 }
 #sb_2{
     float: left;
-    width: 10%;
+    width: 60px;
     height: 60px;
     overflow: hidden;
     /* background-color: rgb(255, 56, 56); */
 }
 #sb_3{
     float: left;
-    width: 15%;
+    width: 120px;
     height: 60px;
     overflow: hidden;
     /* background-color: rgb(25, 201, 57); */
 }
 #sb_1 input{
-    float: left;
     height: 32px;
     width: 92%;
     font-size: 24px;
@@ -70,25 +82,34 @@ body{
     border-right: 0;
     padding: 12px 0 12px 8%;
     background-color: #fff;
-    border-radius:15px 0 0 15px;
+    border-radius:10px 0 0 10px;
 }
-#sb_2 button{
-    display: block;
-    height: 100%; 
+#sb_2 div{
+    height: 56px; 
     width: 100%;
     margin: 0;
     padding: 0;
-    border: 0;
-    text-align: center;
-    line-height: 60px;
-    font-size: 16px;
     border-top: 2px solid #c4c7ce;
     border-bottom: 2px solid #c4c7ce;
     background-color: #fff;
+}
+#button{
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 28px;
+    font-family: 宋体;
     color: gray;
+    background-color: transparent;
 }
 #sb_2 button:hover{
     color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 #sb_3 input{
     /* display: block; */
@@ -123,6 +144,7 @@ body{
     background:rgba(255,255,255, 0.7);
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 #nav li{
