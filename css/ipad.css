@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /* ------------------------屏幕适应----------------------------- */
-@media screen and (max-width:1080px) and (min-width:500px) {
+@media screen and (max-width:1200px) and (min-width:500px) {
 
 *{
     margin: 0;
